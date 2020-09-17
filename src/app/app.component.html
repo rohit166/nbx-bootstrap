@@ -1,0 +1,18 @@
+<nav class="d-flex py-3 align-items-center" style="background-color: gray;height: 60px;">
+  <app-dropdown>
+    <app-dropdown-label (click)="menu.toggle()">Dropdown button</app-dropdown-label>
+    <app-dropdown-menu #menu>
+      <app-dropdown-item (click)="dosome()">Action</app-dropdown-item>
+      <app-dropdown-item>Another action</app-dropdown-item>
+      <app-dropdown-item>Something else here</app-dropdown-item>
+    </app-dropdown-menu>
+  </app-dropdown>
+  <app-dropdown class="ml-3">
+    <app-dropdown-label (click)="menu2.toggle()">Dropdown button</app-dropdown-label>
+    <app-dropdown-menu #menu2>
+      <app-dropdown-item>Action</app-dropdown-item>
+      <app-dropdown-item>Another action</app-dropdown-item>
+      <app-dropdown-item>Something else here</app-dropdown-item>
+    </app-dropdown-menu>
+  </app-dropdown>
+</nav>
